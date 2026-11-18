@@ -1,0 +1,143 @@
+{
+  "project": "03-noticias-cripto",
+  "verifiedAt": "2026-11-02T17:18:25.781536+00:00",
+  "commands": [
+    {
+      "command": "npm ci",
+      "exitCode": 0,
+      "log": "ci-final.log"
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "log": "test-final.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "log": "typecheck-final.log"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "log": "build-final.log"
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "log": "lint-final.log"
+    }
+  ],
+  "gateway": {
+    "preserved": true,
+    "before": {
+      "src/server.ts": "2d0e091d7d00fa1dd238bb2282a4ab1938cc4482372f2d10d8195f39cc268813",
+      "src/lib/child-config.server.ts": "45c7c15afe32d564dbf8d72af0a0494c414b6c21c01ed381045c1314a2325a4d",
+      "src/lib/child-handshake.server.ts": "f4b7a35d14605312a9c35293fe1cb203def46a999745f5c407641e5eac028a65",
+      "src/lib/central-address.ts": "54a83a12040ab716c96524e7c23f36941cf383f8677c1531a6e75c84e2b10225",
+      "src/routes/__root.tsx": "f1a9df3a7ccc1ecb105bdb2e037e7cc81dc26afa52bdc8b31b85a5e09a32d4c7",
+      "src/routes/api/public/v1/workers/announce.ts": "fee4e8aae7cd050d4feb43661871f7b18667c256cafee3a8b03b98200d0cb8ee"
+    },
+    "after": {
+      "src/server.ts": "2d0e091d7d00fa1dd238bb2282a4ab1938cc4482372f2d10d8195f39cc268813",
+      "src/lib/child-config.server.ts": "45c7c15afe32d564dbf8d72af0a0494c414b6c21c01ed381045c1314a2325a4d",
+      "src/lib/child-handshake.server.ts": "f4b7a35d14605312a9c35293fe1cb203def46a999745f5c407641e5eac028a65",
+      "src/lib/central-address.ts": "54a83a12040ab716c96524e7c23f36941cf383f8677c1531a6e75c84e2b10225",
+      "src/routes/__root.tsx": "f1a9df3a7ccc1ecb105bdb2e037e7cc81dc26afa52bdc8b31b85a5e09a32d4c7",
+      "src/routes/api/public/v1/workers/announce.ts": "fee4e8aae7cd050d4feb43661871f7b18667c256cafee3a8b03b98200d0cb8ee"
+    },
+    "noLiveRegistration": true
+  },
+  "httpSmoke": {
+    "at": "2026-11-02T17:18:59.745Z",
+    "origin": "http://127.0.0.1:5103",
+    "requests": [
+      {
+        "path": "/",
+        "status": 200,
+        "htmlBytes": 8548,
+        "gatewayDisclosure": true
+      },
+      {
+        "path": "/api/market/news",
+        "status": 200,
+        "dataStatus": "ok",
+        "count": 60,
+        "fetchedAt": "2026-11-02T17:19:03.493Z",
+        "sample": {
+          "title": "Binance retoma saques de criptomoedas em mais três redes após ataque hacker - Valor Econômico",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNenFEeWk1cVhnRVdxMzNqUWJWY1lZY0V0aXlranUtTG5uMk5OYkY1WXk4RjhfWnExbG9FUlRFNTQzeG11TXpLaXpxNDBzbW9vb2x6aDRCQUdpVjJBaU5jVFRJaTR5VnlDLS1vN1dISGlxRExJWmFRdG9nM25XVE5kbU1Wb1Y1Mm42dE1qN0VwOVVoaHU4TEd2NFRBQWJoZDYzT0hiVzVzMWFITmExWkVTWWxmdDNSMk5LQW1JY21ZV2xORVpsZVpjdUZwSdIB2gFBVV95cUxPeGJDQ2poc1FrcmJLemcwQVI1cW5JTkJLRGVpU05YUzM2cU1KODRlUFU0RjdQOXd4cDNESzkwQlZrUUtreTFvVXBWd21YM0t2blg0b0M1QTUzNzQzYVNLV1daUUlNdk5JZjBlTzA2MDVKWHYySmhJbFZVVmMweGFETDhHeVl1RkZxRElmam1YbFllM1NuNVRtSnRxWHNIOURwaE9iMXZ2Z05TV05QdTh4cnJRS3prS1MzSnNUQnZOZUUwNDVxT2lieWJqem53alZxMkxhWUVvSHNuZw?oc=5",
+          "source": "Valor Econômico",
+          "publishedAt": "2026-11-01T15:16:51.000Z"
+        }
+      },
+      {
+        "path": "/api/market/quotes",
+        "status": 200,
+        "dataStatus": "ok",
+        "count": 7,
+        "fetchedAt": "2026-11-02T17:19:03.804Z",
+        "sample": {
+          "symbol": "BTCBRL",
+          "name": "Bitcoin/Real Brasileiro",
+          "price": 423033,
+          "change": -0.766,
+          "asOf": "2026-11-02T17:16:01.000Z",
+          "provider": "AwesomeAPI",
+          "kind": "Cripto",
+          "currency": "BRL",
+          "delay": "Preço de compra (bid); não é cotação executável. Atraso não garantido."
+        }
+      }
+    ]
+  },
+  "browserSmoke": {
+    "port": 5103,
+    "loadedCount": 60,
+    "noMatchCount": 0,
+    "restoredCount": 60,
+    "sourceFilter": true,
+    "disclosure": true,
+    "bodyOverflow": false,
+    "mobileWidth": 390,
+    "mobileOverflow": false,
+    "mobileDataLoadedVerified": false,
+    "mobileNote": "390px overflow verified while npm ci disrupted hydration; loaded-data interactions verified separately at 762px"
+  },
+  "sources": [
+    "Google News RSS pt-BR, fixed query",
+    "brapi PETR4,VALE3,ITUB4,MGLU3 without token",
+    "AwesomeAPI USD-BRL,EUR-BRL,BTC-BRL without token"
+  ],
+  "limitations": [
+    "Google News feed restricts to personal non-commercial use",
+    "No official B3 real time; provider delay not guaranteed",
+    "brapi only four free test assets",
+    "AwesomeAPI bid not executable quote",
+    "14 moderate transitive vulnerabilities from npm install; see ci-final.log",
+    "Cache memory only 300s news/60s quotes; partial failures marked stale"
+  ],
+  "changes": [
+    "src/components/MarketPage.tsx",
+    "src/lib/market.server.ts",
+    "src/routes/api/market/news.ts",
+    "src/routes/api/market/quotes.ts",
+    "src/routes/index.tsx",
+    "src/styles.css",
+    "src/routeTree.gen.ts",
+    "tests/market.test.cjs",
+    "tests/load-typescript.cjs",
+    "package.json",
+    "package-lock.json",
+    "README.md",
+    "INICIAR.bat"
+  ],
+  "removedUnused": [
+    "supabase/config.toml",
+    "src/integrations/supabase (unused copied integration; missing package caused baseline typecheck errors, formatting caused baseline lint errors)"
+  ],
+  "backups": "C:/Users/e_dio/AppData/Local/hermes/cache/scratch/03-noticias-cripto-unused-supabase",
+  "status": "passed",
+  "smokeAfterNpmCi": true,
+  "devServersStoppedAfterSmoke": true
+}
